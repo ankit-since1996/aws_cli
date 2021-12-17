@@ -16,7 +16,7 @@ vlm_id=`aws ec2 create-volume --availability-zone $az --volume-type gp2 --size 1
 sleep 60s
 aws ec2 attach-volume --device /dev/sdb --instance-id $vm_id --volume-id $vlm_id
 
-echi "Hi"
+echi "Hi."
 
 
 
